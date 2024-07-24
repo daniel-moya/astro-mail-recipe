@@ -13,7 +13,6 @@ interface Message {
 	attachments: Array<Attachment>;
 }
 
-
 export const mailgunClient = {
 	send: async function(message: Message) {
 		if (!message.html && !message.text) {
